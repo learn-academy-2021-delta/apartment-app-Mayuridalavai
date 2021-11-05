@@ -14,3 +14,48 @@
  *= require_self
  */
  @import 'bootstrap';
+
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  
+  /* ---HEADER--- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c2a009;
+    position: fixed;
+    width: 100%;
+    top: 0
+  }
+  .nav-bar {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+  }
+  .nav-link {
+    margin: 10px;
+    color: #d8db0b;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  .logo {
+    height: 150px;
+    margin-left: 20px;
+  }
+  /* ---FOOTER--- */
+footer {
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #c2a009;
+    display: flex;
+    justify-content: space-around;
+  }
+  
