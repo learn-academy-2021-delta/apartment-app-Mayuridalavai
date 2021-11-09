@@ -1,26 +1,40 @@
 import React, { Component } from 'react'
-import { Card, CardTitle, Col } from 'reactstrap'
+import { Button } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
+import { faHome, faCity } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class ApartmentIndex extends Component {
   render() {
+    const { apartments } = this.props
     return (
       <div className="page-body">
-   <h3>Here are Apartment List!</h3>
-<br />
-  <Col sm="6">
-    {this.props.apts.map(apt => {
-      return (
-        <Card body key={apt.id}>
-          <CardTitle>
-            <h4>{apt.street}</h4>
-          </CardTitle>
-        </Card>
-      )
-    })}
-  </Col>
-       
+        <h3>All the Apartments</h3>
+        <br />
+        <br />
+        <article className="cards">
+          {apartments && apartments.map(apartment => {
+            return (
+              <section key={apartment.id} className="card">
+                <div>
+                  <FontAwesomeIcon icon={faHome} className="fa-icon" />
+                    {apartment.street}
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faCity} className="fa-icon" />
+                    {apartment.city}, {apartment.state}
+                </div>
+                <br />
+                <NavLink to={`/apartmentshow/${apartment.id}`}>
+                  <Button>
+                    More Info
+                  </Button>
+                </NavLink>
+              </section>
+            )
+          })}
+        </article>
       </div>
-      
     )
   }
 }

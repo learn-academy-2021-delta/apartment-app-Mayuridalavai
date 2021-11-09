@@ -6,10 +6,9 @@ class ApartmentShow extends Component {
   render() {
     return (
       <>
-   <h3>Show Apartments</h3>
+     <h3>Show Apartments</h3>
       </>
-      
-    )
+      )
   }
 }
 export default ApartmentShow

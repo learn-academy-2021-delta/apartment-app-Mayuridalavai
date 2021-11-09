@@ -83,7 +83,6 @@ footer {
   border: 3px 
 }
 
-
 .btn-secondary {
   margin: 6px;
   color:rgba(199, 201, 235, 0.925);
@@ -91,4 +90,29 @@ footer {
   flex-direction: row;
   align-items: flex-end;
   padding-right: 10px;
+}
+/* ---INDEX--- */
+.card {
+  text-align: left;
+  border: 1px solid black;
+  padding: 40px;
+  border: 1px solid black;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.fa-icon {
+  font-size: 25px;
+  padding-right: 10px;
+}
+button {
+  padding: 10px;
+  background-color: #8B0000;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #D2D2CF;
+  color: black;
 }
