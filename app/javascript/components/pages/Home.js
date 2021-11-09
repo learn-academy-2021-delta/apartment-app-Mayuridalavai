@@ -8,8 +8,7 @@ class Home extends Component {
         <div className="page-body">
       <h1>Welcome to our Apartments</h1>
       <img src={aptImage} alt="Apartment layout" className="aptimage"/>
-       
-     </div>
+       </div>
     )
   }
 }

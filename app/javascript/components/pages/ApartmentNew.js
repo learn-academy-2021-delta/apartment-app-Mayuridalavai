@@ -5,11 +5,9 @@ class ApartmentNew extends Component {
   render() {
     return (
       <>
-<h3>Add new Apartment</h3>
-      
+     <h3>Add new Apartment</h3>
       </>
-      
-    )
+      )
   }
 }
 export default ApartmentNew

@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 class NotFound extends Component {
   render() {
     return (
-<h3>Ooops! No Apartments here.</h3>
+  <h3>Ooops! No Apartments here.</h3>
     )
   }
 }
